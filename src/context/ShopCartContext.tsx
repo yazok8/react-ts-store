@@ -61,7 +61,7 @@ export const CartProvider = ({ children }: CartProviderProps) => {
 
     function decreaseItemQuantity(id: number) {
         setCartItems(curItems => {
-            return curItems.find(item => item.id === id)?.itemQuantity == 1 ? curItems.filter(item => item.id !== id) :
+            return curItems.find(item => item.id === id)?.itemQuantity === 1 ? curItems.filter(item => item.id !== id) :
                 curItems.map(item => {
                     return item.id === id ? { ...item, itemQuantity: item.itemQuantity - 1 } : item
                 })

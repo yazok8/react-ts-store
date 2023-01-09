@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 //Type of T is whatever we pass in the uselocalstorage hook
 export default function useLocalStorage<T>(key: string, defaultValue: T | (() => T)) {
@@ -8,8 +8,11 @@ export default function useLocalStorage<T>(key: string, defaultValue: T | (() =>
 
         if (typeof defaultValue === "function") {
             return (defaultValue as () => T)
-        } if (localStorageItem === null) return defaultValue;
+
+        }
+
         try {
+            if (localStorageItem === null) { return defaultValue; }
             return () => JSON.parse(localStorageItem) || defaultValue
 
         } catch {

@@ -16,7 +16,7 @@ const Navbar = () => {
       </Container>
       {cartTotal > 0 && (
         <Button onClick={openCart} style={{ width: "3rem", height: "3rem", position: "relative" }} variant="outline-primary" className="rounded-circle me-3">
-          <img src="images/cart.svg"></img>
+          <img src="images/cart.svg" alt="cart"></img>
 
           <div className="rounded-circle bg-danger d-flex justify-content-center align-items-center"
             style={{ color: "white", width: "1.5rem", height: "1.5rem", position: "absolute", bottom: 0, right: 0, transform: "translate(5%, 25%)" }}>

@@ -22,7 +22,7 @@ const ItemInCart = ({ id, itemQuantity }: ItemInCartProps) => {
 
   return (
     <Stack className="align-items-center d-flex" direction="horizontal" gap={2}>
-      <img className="item-img" src={cartItem.imgUrl} />
+      <img className="item-img" alt="product" src={cartItem.imgUrl} />
       <div className="me-auto">
         <div>
           {cartItem.name}{itemQuantity > 1 && <span className="item-quantity">
