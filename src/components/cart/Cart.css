@@ -1,0 +1,19 @@
+.item-img {
+    width: 125px;
+    height: 75px;
+    object-fit: cover
+}
+
+.item-quantity {
+    color: #6c757d !important;
+    margin-inline: .25rem;
+}
+
+.item-price {
+    font-size: .75rem;
+}
+
+.remove-item {
+    border: none;
+    color: black;
+}

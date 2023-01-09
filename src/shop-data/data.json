@@ -1,0 +1,40 @@
+[
+    {
+      "id": 1,
+      "name": "Aston Martin",
+      "price": 150000,
+      "imgUrl": "/images/aston-martin-red.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Porsche 911",
+      "price": 150000,
+      "imgUrl": "/images/porsche911.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Lamborghini",
+      "price": 900000,
+      "imgUrl": "/images/Lamborghini.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Ferrari SP48 Unica",
+      "price": 250000,
+      "imgUrl": "/images/Ferrari-SP48.jpg"
+    },
+
+    {
+      "id": 5,
+      "name": "Pagani Huayra",
+      "price": 150000,
+      "imgUrl": "/images/Pagani_Huayra.jpg"
+    },
+
+    {
+      "id": 6,
+      "name": "Tesla Roadstr",
+      "price": 80000,
+      "imgUrl": "/images/tesla-roadstr.jpg"
+    }
+  ]
