@@ -6,9 +6,6 @@ const StarRating = ({ productId }: { productId: string }) => {
 
   const stars = Array.from({ length: 5 });
 
-  // we are using product id and ratings to store and retrieve values for each product ratings from local store. 
-  const storedRatings = localStorage.getItem(`product-${productId}-ratings`);
-  const ratings = storedRatings ? JSON.parse(storedRatings) : []
   const [rating, setRating] = useState({ value: 0, hover: null });
 
   // this will retrieve the values from localstorage 
@@ -19,8 +16,7 @@ const StarRating = ({ productId }: { productId: string }) => {
     }
   }, [productId]);
 
-  // the handleChange can update and store rating values in local storage whenever the user click on a star
-
+  // the handleChange will keep track, update and store rating values in local storage whenever the user click on a star
   const handleChange = (value: number) => {
     setRating({ value: value, hover: null });
     const storedRatings = localStorage.getItem(`product-${productId}-ratings`);
